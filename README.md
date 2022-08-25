@@ -1,5 +1,7 @@
 Project Structure
-./Library
-./Resources
-./Tests
-./Results
+./library
+./site/pages
+./site/test-data
+./site/test-result
+./site/test-suite
+
