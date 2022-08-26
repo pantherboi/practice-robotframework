@@ -1,7 +1,8 @@
 Project Structure
-./library
-./site/pages
-./site/test-data
-./site/test-result
-./site/test-suite
+./library      // custom libraries
+./resources    // reusable code
+./POM/site/pages
+./POM/site/test-data
+./POM/site/test-result
+./POM/site/test-suite
 

@@ -1,9 +1,12 @@
 *** Settings ***
-Resource  ../resources/pages/home.resource
+Library   OperatingSystem
+Library   Selenium2Library
+Resource  ../pages/home.resource
+Resource  ../../../resources/keyword.resource
+Test Setup   Run keywords  SETUP ENVIRONMENT  AND  Open Browser ${HOME URL LOCAL}        
 
 *** Test Cases ***
 Exercies 1.1 
-    Given OPEN HOME PAGE LOCAL 
     #Given 'Add Element' button exists and it is the only button on the page.
 
 # Given login page is open
