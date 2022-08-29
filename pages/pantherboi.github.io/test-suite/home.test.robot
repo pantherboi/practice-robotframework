@@ -1,12 +1,13 @@
 *** Settings ***
 Library   OperatingSystem
 Library   Selenium2Library
-Resource  ../pages/home.resource
-Resource  ../../../resources/keyword.resource
-Test Setup   Run keywords  SETUP ENVIRONMENT  AND  Open Browser ${HOME URL LOCAL}        
+Resource  ../resources/home.object.resource
+Resource  ../../../resources/global.keyword.resource
+Test Setup   Run keywords  SETUP ENVIRONMENT        
 
 *** Test Cases ***
 Exercies 1.1 
+    Open Browser  ${HOME URL LOCAL}   
     #Given 'Add Element' button exists and it is the only button on the page.
 
 # Given login page is open
