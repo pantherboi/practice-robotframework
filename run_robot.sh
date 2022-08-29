@@ -3,5 +3,7 @@
 file=$1
 outputdir=$file/../../test-result
 date=$(date "+%Y%m%d")
-export ROBOT_OPTIONS="--outputdir $outputdir/$date --timestampoutputs "
-robot $1
+timestamp=$(date "+%Y%m%d%H%M%s")
+/usr/local/bin/chromedriver --version
+export ROBOT_OPTIONS="--outputdir $outputdir/$date/$timestamp --timestampoutputs --variable field:$value"
+robot $1 
