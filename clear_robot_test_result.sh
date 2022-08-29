@@ -1,0 +1,1 @@
+rm -rfv ./pages/*/test-result/*
